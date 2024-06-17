@@ -1,0 +1,31 @@
+.card{
+    background-color: #ffff;
+    height:130px;
+    width:130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.3s ease;
+}
+img{
+    height:120px;
+    width:120px;
+    object-fit: cover ;
+}
+.back{
+    background:url('https://blog.spoongraphics.co.uk/wp-content/uploads/2013/blur-pattern/blur-pattern.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:100%;
+    width:100%;
+    position: absolute;
+    top:0;
+    backface-visibility: hidden;
+    cursor: pointer;
+}
+.card.open{
+    transform: rotateY(180deg);
+}

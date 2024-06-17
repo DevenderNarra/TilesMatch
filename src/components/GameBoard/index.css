@@ -1,0 +1,33 @@
+.container{
+    height: 90vh;
+    width:90vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:solid 2px black;
+}
+.score-container{
+    display: flex;
+    gap:20px;
+}
+.heading{
+    text-decoration: underline;
+}
+.score{
+    margin-bottom: 10px;
+}
+.tries{
+    margin-bottom: 10px;
+}
+.cards-container{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:1rem;
+    perspective: 700px;
+    margin-top:20px;
+}
+.game-name-container{
+    text-align: center;
+    text-decoration: underline;
+}
